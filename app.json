@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "TaskApp",
+    "slug": "taskapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "TaskApp needs access to your camera to take profile pictures.",
+        "NSPhotoLibraryUsageDescription": "TaskApp needs access to your photos to select profile pictures.",
+        "NSPhotoLibraryAddUsageDescription": "TaskApp needs access to save photos to your library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "TaskApp needs access to your photos to select profile pictures.",
+          "cameraPermission": "TaskApp needs access to your camera to take profile pictures."
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "TaskApp needs access to your calendar to add task reminders."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
+  }
+}
