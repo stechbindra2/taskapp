@@ -2,7 +2,7 @@
 export default {
   AI: {
     // In a production app, use environment variables instead of hardcoding
-    apiKey: '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',
+    apiKey: 'sk-or-v1-b417a87e4e0########################################################',
     enabled: true, // Enable AI features
   },
   APP: {
